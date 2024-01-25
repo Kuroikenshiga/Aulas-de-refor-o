@@ -12,7 +12,7 @@
     <div id="principal">
         <div id="container">
             <a href="pags/CadastraAnimalPag.php"><button type="button" class="btn btn-success">Cadastrar Animais</button></a>
-            <a href=""><button type="button" class="btn btn-secondary">Listagem de Animais</button></a>
+            <a href="pags/ListaDeAnimaisPag.php"><button type="button" class="btn btn-secondary">Listagem de Animais</button></a>
         </div>
     </div>
 </body>
