@@ -24,6 +24,7 @@
                     <th scope="col">Nome do animal</th>
                     <th scope="col">Data de nascimento</th>
                     <th scope="col">Situação do animal</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -33,10 +34,13 @@
                     
                 ?>
                 <tr> 
+                    <!-- Array chave valor -->
+
                     <td><?=$linha['id_animal']?></td>
                     <td><?=$linha['nome']?></td>
                     <td><?=date('d-m-Y',strtotime($linha['data_nascimento']))?></td>
                     <td><?=$linha['situacao']?></td>
+                    <td><a href="../action/DeletaAnimalAction.php?id=<?=$linha['id_animal']?>"><button type="button" class="btn btn-danger">Deletar</button></a></td>
                 </tr>
                 <?php }?>
             </tbody>
